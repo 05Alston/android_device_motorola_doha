@@ -21,13 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # TODO: this?
 # $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit from ginkgo device
-# TODO: Add this file
-# $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# TODO: Add this file
 # Inherit from doha device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
