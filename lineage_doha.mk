@@ -21,17 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-#TODO:Add File
-# Inherit from ginkgo device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Inherit from doha device
+$(call inherit-product, device/motorola/doha/device.mk)
 
 PRODUCT_NAME := lineage_doha
 PRODUCT_DEVICE := doha
-PRODUCT_BRAND := Motorola
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_MODEL := Moto G8 Plus
-#TODO: this?
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_BRAND := motorola
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_MODEL := moto g(8) plus
+
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 TARGET_VENDOR_PRODUCT_NAME := doha
 
